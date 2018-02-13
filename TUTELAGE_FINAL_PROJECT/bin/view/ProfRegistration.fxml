@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="custPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-image: url('file:RegisterImage.jpg'); -fx-background-size: 750 500;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfRegistrationController">
+   <children>
+      <Label fx:id="applicationTitle" layoutX="308.0" layoutY="28.0" text="TUTELAGE" textFill="#ddad28">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="40.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="41.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="42.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="40.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="66.6015625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="42.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="401.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="401.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="401.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="401.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zipcode">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="WHITE" layoutX="401.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fName" layoutX="165.0" layoutY="116.0" promptText="first name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lName" layoutX="165.0" layoutY="164.0" promptText="last name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="profUsername" layoutX="165.0" layoutY="214.0" promptText="username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressOne" layoutX="165.0" layoutY="313.0" promptText="address 1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneNumber" layoutX="544.0" layoutY="313.0" promptText="mobile number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="postalCode" layoutX="543.0" layoutY="266.0" promptText="postal code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="state" layoutX="543.0" layoutY="217.0" promptText="state">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="city" layoutX="543.0" layoutY="167.0" promptText="city">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressTwo" layoutX="543.0" layoutY="119.0" promptText="address 2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="adminBtn" layoutX="270.0" layoutY="388.0" mnemonicParsing="false" onAction="#newProf" prefHeight="37.0" prefWidth="75.0" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminBtn" layoutX="402.0" layoutY="388.0" mnemonicParsing="false" onAction="#clearText" prefHeight="37.0" prefWidth="75.0" text="Clear">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="33.0" layoutY="67.0" onAction="#goBack" text="&lt;&lt;Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Hyperlink>
+      <PasswordField fx:id="profPassword" layoutX="165.0" layoutY="266.0" promptText="password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="447.0" prefHeight="20.0" prefWidth="750.0" textAlignment="CENTER" textFill="#d70808">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

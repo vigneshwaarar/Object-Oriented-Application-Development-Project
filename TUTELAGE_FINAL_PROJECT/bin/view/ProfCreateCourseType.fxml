@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-image: url('file:DetailsImage2.jpg'); -fx-background-size: 750 500;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCourseTypeController">
+   <children>
+      <Label fx:id="applicationTitle" layoutX="295.0" layoutY="37.0" style="-fx-background-color: ;" text="TUTELAGE" textFill="#ddad28">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="subTitile" layoutX="192.0" layoutY="159.0" text="Please enter the Course Type details" textFill="#ffa8a8">
+         <font>
+            <Font name="Cambria Italic" size="25.0" />
+         </font>
+      </Label>
+      <Text fx:id="fieldName" fill="#f2ff00" layoutX="180.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="fieldName" fill="#fffb00" layoutX="173.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Description">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="typeName" layoutX="348.0" layoutY="241.0" promptText="Course Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="typeDescription" layoutX="348.0" layoutY="286.0" prefHeight="68.0" prefWidth="281.0" promptText="Course Description">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="AdminBtns" layoutX="351.0" layoutY="400.0" mnemonicParsing="false" onAction="#newCourseTypeP" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSignout" layoutX="661.0" layoutY="90.0" mnemonicParsing="false" onAction="#courseTypeLogout" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="backLink" layoutX="22.0" layoutY="90.0" onAction="#goBackP" text="&lt;&lt;Back" textFill="#221f1f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="replyMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="450.0" prefHeight="20.0" prefWidth="756.0" textAlignment="CENTER" textFill="#da1b1b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

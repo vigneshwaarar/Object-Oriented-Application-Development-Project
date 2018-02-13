@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-image: url('file:DetailsImage2.jpg'); -fx-background-size: 750 500;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCourseTypeController">
+	<children>
+		<Label fx:id="applicationTitle" layoutX="277.0" layoutY="14.0" text="TUTELAGE" textFill="#ff009d">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<TableView fx:id="items" layoutX="69.0" layoutY="114.0" prefHeight="295.0" prefWidth="614.0">
+			<columns>
+				<TableColumn prefWidth="177.0" text="COURSE_NAME">
+					<cellValueFactory>
+						<PropertyValueFactory property="typeName" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="436.0" text="COURSE_DESCRIPTION">
+					<cellValueFactory>
+						<PropertyValueFactory property="typeDescription" />
+					</cellValueFactory>
+				</TableColumn>
+			</columns>
+		</TableView>
+		<Hyperlink fx:id="backLink" layoutX="22.0" layoutY="69.0" onAction="#goBackP" text="&lt;&lt;Back" textFill="#221f1f">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Hyperlink>
+		<Button fx:id="btnSignout" layoutX="662.0" layoutY="41.0" mnemonicParsing="false" onAction="#courseTypeLogout" text="Logout">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+      <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="468.0" prefHeight="20.0" prefWidth="750.0" textAlignment="CENTER" textFill="#da1b1b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>

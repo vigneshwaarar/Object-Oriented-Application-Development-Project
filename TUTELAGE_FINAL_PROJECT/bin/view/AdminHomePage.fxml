@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-image: url('file:HomeImage.jpg'); -fx-background-size: 750 500;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeController">
+         <children>
+            <Label fx:id="applicationTitle" layoutX="279.0" layoutY="14.0" text="TUTELAGE" textFill="#00f7fc">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="AdminBtns" layoutX="260.0" layoutY="277.0" mnemonicParsing="false" onAction="#viewCourseDetails" text="View Course Enrollements">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AdminBtns" layoutX="289.0" layoutY="143.0" mnemonicParsing="false" onAction="#createCourseType" prefHeight="39.0" prefWidth="173.0" text="Create Course">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AdminBtns" layoutX="276.0" layoutY="211.0" mnemonicParsing="false" onAction="#viewCourseType" prefHeight="39.0" prefWidth="198.0" text="View Course Request">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="welcome" layoutX="660.0" layoutY="56.0" textFill="#d4ff00">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignout" layoutX="661.0" layoutY="90.0" mnemonicParsing="false" onAction="#adminLogout" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+      
+         </children>
+      </AnchorPane>

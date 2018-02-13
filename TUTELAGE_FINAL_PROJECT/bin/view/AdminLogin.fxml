@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Pane fx:id="adminPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-image: url('file:LoginImage.jpg'); -fx-background-size: 800 556;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="fieldName" fill="#f7ff05" layoutX="218.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <Text fx:id="fieldName" fill="#f0f005" layoutX="220.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <TextField fx:id="adminUser" layoutX="318.0" layoutY="235.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="AdminBtns" layoutX="393.0" layoutY="332.0" mnemonicParsing="false" onAction="#adminSignin" prefHeight="33.0" prefWidth="87.0" text="Login">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label fx:id="applicationTitle" layoutX="293.0" layoutY="14.0" text="TUTELAGE" textFill="#00ffea">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutY="388.0" prefHeight="23.0" prefWidth="750.0" textAlignment="CENTER" textFill="#d70808">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="adminPassword" layoutX="318.0" layoutY="274.0" prefHeight="30.0" prefWidth="175.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Hyperlink fx:id="backLink" layoutX="27.0" layoutY="111.0" onAction="#goBack" text="&lt;&lt;Back" textFill="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="subTitile" layoutX="256.0" layoutY="159.0" text="Administrator Login" textFill="#10f50f">
+               <font>
+                  <Font name="Cambria Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
